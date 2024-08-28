@@ -43,12 +43,12 @@ Steps to Download and Install Oracle XE 21c Database
 	o) Give the path to hr_main.sql (e.g: @D:\ABDULREHMAN\ORACLE_DB_XE_21C\dbhomeXE\demo\schema\human_resources\hr_main.sql)
 	p) Press Enter
 	q) Give the values
-	r) specify password for HR as parameter 1: 								hrpwd
-	s) specify default tablespace for HR as parameter 2:						users
-	t) specify temporary tablespace for HR as parameter 3:					temp
-	u) specify password for SYS as parameter 4:								db
-	v) specify log path as parameter 5:										$ORACLE_HOME/demo/schema/log
-	w) specify connect string as parameter 6:									localhost:1521/XEPDB1
+	r) specify password for HR as parameter 1: 					hrpwd
+	s) specify default tablespace for HR as parameter 2:				users
+	t) specify temporary tablespace for HR as parameter 3:				temp
+	u) specify password for SYS as parameter 4:					db
+	v) specify log path as parameter 5:						$ORACLE_HOME/demo/schema/log
+	w) specify connect string as parameter 6:					localhost:1521/XEPDB1
 	x) This file will create hr schema and user.
 
 
