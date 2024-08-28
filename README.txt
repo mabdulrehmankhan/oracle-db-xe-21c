@@ -57,7 +57,7 @@ Steps to Download and Install Oracle XE 21c Database
 4) Check the INSTALLATION:
 	a) Run: conn hr/hrpwd@//localhost:1521/XEPDB1
 	b) Connected
-	c) Now execute these commands one by one.
+	c) Now execute these commands one by one. (!! Replace the path with your exact and accurate path to the file)
 	d) SQL> @OracleED21c\dbhomeXE\demo\schema\human_resources\hr_cre.sql
 	e) SQL> @OracleED21c\dbhomeXE\demo\schema\human_resources\hr_popul.sql
 	f) SQL> @OracleED21c\dbhomeXE\demo\schema\human_resources\hr_idx.sql
