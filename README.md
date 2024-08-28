@@ -63,7 +63,7 @@
     ```
 4. If the query returns the schema of the `employees` table, the installation is successful.
 
-### 4. Oracle SQL Developer (Optional)
+### 4. Oracle SQL Developer (Optional {This is optional, if you're running commands on sqlplus, then skip this})
 1. Visit the [SQL Developer Download page](https://www.oracle.com/database/sqldeveloper/technologies/download/).
 2. Choose the appropriate version for your operating system (Linux or Windows).
 3. Download the installer package.  
