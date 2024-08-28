@@ -28,7 +28,7 @@ Steps to Download and Install Oracle XE 21c Database
 
 3) Configure SAMPLE HR DATABASE:
 	a) Download "human_resources.zip" from the folder
-	b) Copy folder containing human_resourse files and place it to the oracle installation folder e.g (OracleED21c\dbhomeXE\demo\schema)
+	b) Copy folder containing human_resourse files and place it to the oracle installation folder e.g (OracleED21c\dbhomeXE\demo\schema) (!! Replace the path with your exact and accurate path to the file)
 	c) Click on hr-scehma folder
 	d) Open hr_main.sql file with notepad
 	e) Delete the hr_main.sql file in it
