@@ -40,7 +40,7 @@ Steps to Download and Install Oracle XE 21c Database
 	l) Session connected.
 	m) Type: connect sys as sysdba
 	n) On sql prompt write: (password: {YOUR_PASSWORD}) *write the password you setup while installation
-	o) Give the path to hr_main.sql (e.g: D:\ABDULREHMAN\ORACLE_DB_XE_21C\dbhomeXE\demo\schema\human_resources\hr_main.sql)
+	o) Give the path to hr_main.sql (e.g: @D:\ABDULREHMAN\ORACLE_DB_XE_21C\dbhomeXE\demo\schema\human_resources\hr_main.sql)
 	p) Press Enter
 	q) Give the values
 	r) specify password for HR as parameter 1:                                                                          hrpwd                                                                                                                                                                         
@@ -54,3 +54,18 @@ Steps to Download and Install Oracle XE 21c Database
 	b) Connected
 	c) Run: Desc employees;
 	d) If the query returns the schema of employees table thn installation is done successfully.
+
+
+
+5) ORACLE SQL DEVELOPER:
+	a) Open sqldeveloper.exe
+	b) Click on "+" on the top left corner
+	c) Now put name HR_SCEHMA
+	d) Username: hr
+	e) Password: hrpwd
+	f) Hostname: localhost
+	g) Port: 1521
+	h) Service name: xepdb1
+	i) Click on Test
+	j) If Success, then connect
+	
