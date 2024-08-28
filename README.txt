@@ -1,83 +1,83 @@
-Oracle XE 21c Database Setup Guide by MUHAMMAD ABDUL REHMAN KHAN (https://github.com/mabdulrehmankhan)
+# Oracle XE 21c Database Setup Guide by [MUHAMMAD ABDUL REHMAN KHAN](https://github.com/mabdulrehmankhan)
 
+## Steps to Download and Install Oracle XE 21c Database
 
-Steps to Download and Install Oracle XE 21c Database
+### 1. Download Oracle XE 21c
+1. Visit the [Oracle XE 21c download page](https://www.oracle.com/database/technologies/xe-downloads.html).
+2. Choose the appropriate version for your operating system (Linux or Windows).
+3. Download the installer package.
+4. Unzip the downloaded file.
+5. Locate and run `setup.exe`.
+6. If an error occurs, locate the `ISSetupPrerequisites` folder.
+7. Run the executable again. **Do not install on the C drive.**
+8. Note down the password for the `sys` and `system` users.
+9. Take a screenshot of the final screen showing the connection string information.
 
-1) Download ORACLE XE 21C:
-	a) Visit the Oracle XE 21c download page. (link: https://www.oracle.com/database/technologies/xe-downloads.html).
-	b) Choose the appropriate version for your operating system (Linux or Windows).
-	c) Download the installer package.
-	d) Unzip the downloaded file.
-	e) Locate & Run setup.exe.
-	f) If Error prompts, locate the pre-req folder (ISSetupPrerequisites).
-	g) Run the exe again [Don’t install on C drive].
-	h) Note down the password of sys and system user.
-	i) Take the screen shot of final screen showing connection string information.
+### 2. Configure Sample HR Database
+1. Download `human_resources.zip` from the folder.
+2. Copy the folder containing the human_resources files to the Oracle installation folder (e.g., `OracleED21c\dbhomeXE\demo\schema`).  
+   **Note:** Replace the path with your exact and accurate path to the file.
+3. Open the `hr-schema` folder.
+4. Open the `hr_main.sql` file with a text editor.
+5. Delete the `hr_main.sql` file.
+6. Download the new `hr_main.sql` file from the folder.
+7. Place it in the `hr-schema` folder.
+8. Press the Windows button and search for `SQLPLUS`.
+9. Run SQLPLUS as an administrator.
+10. In the SQL prompt, type:
+    ```sql
+    connect sys as sysdba
+    ```
+11. Enter the password you set up during installation.
+12. Provide the path to `hr_main.sql`:
+    ```sql
+    @D:\ABDULREHMAN\ORACLE_DB_XE_21C\dbhomeXE\demo\schema\human_resources\hr_main.sql
+    ```
+13. Press Enter.
+14. Provide the following values:
+    - **Parameter 1:** `hrpwd` (Password for HR)
+    - **Parameter 2:** `users` (Default tablespace for HR)
+    - **Parameter 3:** `temp` (Temporary tablespace for HR)
+    - **Parameter 4:** `db` (Password for SYS)
+    - **Parameter 5:** `$ORACLE_HOME/demo/schema/log` (Log path)
+    - **Parameter 6:** `localhost:1521/XEPDB1` (Connect string)
 
+### 3. Check the Installation
+1. Run the following command:
+    ```sql
+    conn hr/hrpwd@//localhost:1521/XEPDB1
+    ```
+2. Execute the following scripts one by one:  
+   **Note:** Replace the path with your exact and accurate path to the file.
+    ```sql
+    @OracleED21c\dbhomeXE\demo\schema\human_resources\hr_cre.sql
+    @OracleED21c\dbhomeXE\demo\schema\human_resources\hr_popul.sql
+    @OracleED21c\dbhomeXE\demo\schema\human_resources\hr_idx.sql
+    @OracleED21c\dbhomeXE\demo\schema\human_resources\hr_code.sql
+    @OracleED21c\dbhomeXE\demo\schema\human_resources\hr_comnt.sql
+    @OracleED21c\dbhomeXE\demo\schema\human_resources\hr_analz.sql
+    ```
+3. Run the following command:
+    ```sql
+    DESC employees;
+    ```
+4. If the query returns the schema of the `employees` table, the installation is successful.
 
-
-2) Download ORACLE SQL DEVELOPER:
-	a) Visit the SQL Developer Download page.
-	(link: https://www.oracle.com/database/sqldeveloper/technologies/download/).
-	b) Choose the appropriate version for your operating system (Linux or Windows).
-	c) Download the installer package. (if you have windows 64bit, go for: Windows 64-bit with JDK 11 included)
-	d) Unzip the downloaded file.
-	e) Run sqldeveloper.exe.
-
-
-
-3) Configure SAMPLE HR DATABASE:
-	a) Download "human_resources.zip" from the folder
-	b) Copy folder containing human_resourse files and place it to the oracle installation folder e.g (OracleED21c\dbhomeXE\demo\schema) (!! Replace the path with your exact and accurate path to the file)
-	c) Click on hr-scehma folder
-	d) Open hr_main.sql file with notepad
-	e) Delete the hr_main.sql file in it
-	f) Download "hr_main.sql" from the folder
-	g) Place it in the hr_scehma folder
-	h) Click START (windows button)
-	i) Then search SQLPLUS
-	j) Run as admin
-	k) On sql prompt write: (username: sys as sysdba) (password: {YOUR_PASSWORD}) *write the password you setup while installation
-	l) Session connected.
-	m) Type: connect sys as sysdba
-	n) On sql prompt write: (password: {YOUR_PASSWORD}) *write the password you setup while installation
-	o) Give the path to hr_main.sql (e.g: @D:\ABDULREHMAN\ORACLE_DB_XE_21C\dbhomeXE\demo\schema\human_resources\hr_main.sql)
-	p) Press Enter
-	q) Give the values
-	r) specify password for HR as parameter 1: 					hrpwd
-	s) specify default tablespace for HR as parameter 2:				users
-	t) specify temporary tablespace for HR as parameter 3:				temp
-	u) specify password for SYS as parameter 4:					db
-	v) specify log path as parameter 5:						$ORACLE_HOME/demo/schema/log
-	w) specify connect string as parameter 6:					localhost:1521/XEPDB1
-	x) This file will create hr schema and user.
-
-
-
-4) Check the INSTALLATION:
-	a) Run: conn hr/hrpwd@//localhost:1521/XEPDB1
-	b) Connected
-	c) Now execute these commands one by one. (!! Replace the path with your exact and accurate path to the file)
-	d) SQL> @OracleED21c\dbhomeXE\demo\schema\human_resources\hr_cre.sql
-	e) SQL> @OracleED21c\dbhomeXE\demo\schema\human_resources\hr_popul.sql
-	f) SQL> @OracleED21c\dbhomeXE\demo\schema\human_resources\hr_idx.sql
-	g) SQL> @OracleED21c\dbhomeXE\demo\schema\human_resources\hr_code.sql
-	h) SQL> @OracleED21c\dbhomeXE\demo\schema\human_resources\hr_comnt.sql
-	i) SQL> @OracleED21c\dbhomeXE\demo\schema\human_resources\hr_analz.sql
-	j) Run: Desc employees;
-	k) If the query returns the schema of employees table thn installation is done successfully.
-
-
-
-5) ORACLE SQL DEVELOPER:
-	a) Open sqldeveloper.exe
-	b) Click on "+" on the top left corner
-	c) Now put name HR_SCEHMA
-	d) Username: hr
-	e) Password: hrpwd
-	f) Hostname: localhost
-	g) Port: 1521
-	h) Service name: xepdb1
-	i) Click on Test
-	j) If Success, then connect
-	
+### 4. Oracle SQL Developer (Optional)
+1. Visit the [SQL Developer Download page](https://www.oracle.com/database/sqldeveloper/technologies/download/).
+2. Choose the appropriate version for your operating system (Linux or Windows).
+3. Download the installer package.  
+   **Note:** If you have Windows 64-bit, download "Windows 64-bit with JDK 11 included."
+4. Unzip the downloaded file.
+5. Run `sqldeveloper.exe`.
+6. Open `sqldeveloper.exe`.
+7. Click on the "+" icon on the top left corner.
+8. Enter the following details:
+    - **Name:** HR_SCHEMA
+    - **Username:** `hr`
+    - **Password:** `hrpwd`
+    - **Hostname:** `localhost`
+    - **Port:** `1521`
+    - **Service name:** `xepdb1`
+9. Click on "Test."
+10. If successful, click on "Connect."
