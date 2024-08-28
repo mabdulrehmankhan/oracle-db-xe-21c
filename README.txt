@@ -17,7 +17,8 @@ Steps to Download and Install Oracle XE 21c Database
 
 
 2) Download ORACLE SQL DEVELOPER:
-	a) Visit the SQL Developer Download page. (link: https://www.oracle.com/database/sqldeveloper/technologies/download/).
+	a) Visit the SQL Developer Download page.
+	(link: https://www.oracle.com/database/sqldeveloper/technologies/download/).
 	b) Choose the appropriate version for your operating system (Linux or Windows).
 	c) Download the installer package. (if you have windows 64bit, go for: Windows 64-bit with JDK 11 included)
 	d) Unzip the downloaded file.
