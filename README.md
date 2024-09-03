@@ -14,46 +14,46 @@ Welcome to the **Oracle XE 21c Database Setup Guide**—your comprehensive resou
 ### 1. Download Oracle XE 21c
 1. Visit the [Oracle XE 21c download page](https://www.oracle.com/database/technologies/xe-downloads.html).
 
-   ![INSTALLATION](install.png)
+   ![INSTALLATION](/images/install.png)
 
 2. Choose the appropriate version for your operating system (Linux or Windows).
 3. Download the installer package.
 4. Unzip the downloaded file.
 
-   ![UNZIPPING](unzip.png)
+   ![UNZIPPING](/images/unzip.png)
 
 5. Locate and run `setup.exe`.
 
-   ![SETUP FILE](setup.png)
+   ![SETUP FILE](/images/setup.png)
 
 6. If an error occurs, locate the `ISSetupPrerequisites` folder.
 7. Run the executable again. **Do not install on the C drive.**
 8. Note down the password for the `sys` and `system` users.
 9. Take a screenshot of the final screen showing the connection string information.
 
-   ![SCREENSHOT](screenshot.png)
+   ![SCREENSHOT](/images/screenshot.png)
 
 
 ### 2. Configure Sample HR Database
 1. Download `human_resources.zip` from the folder.
 
-   ![INSTALLATION](hr.png)
+   ![INSTALLATION](/images/hr.png)
 
 2. Unzip it and copy the `human_resources` folder to the `schema` folder in the Oracle installation folder (e.g., `ABDULREHMAN\ORACLE_DB_XE_21C\dbhomeXE\demo\schema`).
    **Note:** Replace the path with your exact and accurate path to the file.
 
-   ![HRSCEHMA](hrschema.png)
+   ![HRSCEHMA](/images/hrschema.png)
 
 
 3. Now, download `hr_main.sql` file from this repository.
 
-   ![INSTALLATION](replace.png)
+   ![INSTALLATION](/images/replace.png)
 
 4. Go to `schema` folder, delete the `hr_main.sql` from there, and paste the currently downloaded file there.
 5. Now, Press the Windows button and search for `SQLPLUS`.
 6. Run SQLPLUS as an administrator.
 
-   ![SQLPLUS](sqlplus.png)
+   ![SQLPLUS](/images/sqlplus.png)
 
 7. In the SQL prompt, type:
     ```sql
@@ -75,10 +75,10 @@ Welcome to the **Oracle XE 21c Database Setup Guide**—your comprehensive resou
 
 12. Tf there is listner error, go to `D:\ABDULREHMAN\SOFTWARES\ORACLE_DB\ORACLE_DB_XE_21C\SETUP\dbhomeXE\network\admin` location in File Explorer and edit `listner.ora` & `tnsnames.ora` files in Notepad, and change the IP with `localhost`.
 
-   ![SQLPLUS](liste.png)
+   ![SQLPLUS](/images/liste.png)
 
 
-   ![SQLPLUS](tra.png)
+   ![SQLPLUS](/images/tra.png)
 
 ### 3. Check the Installation
 1. Run the following command:
@@ -102,7 +102,7 @@ Welcome to the **Oracle XE 21c Database Setup Guide**—your comprehensive resou
 4. If the query returns the schema of the `employees` table, the installation is successful.
 5. The result should be like this:
 
-   ![FINAL RESULT](final_result.jpg)
+   ![FINAL RESULT](/images/final_result.jpg)
 
 ### 4. Oracle SQL Developer (Skip this if you’re comfortable with SQL*Plus)
 1. Visit the [SQL Developer Download page](https://www.oracle.com/database/sqldeveloper/technologies/download/).
