@@ -1,8 +1,15 @@
-# Oracle XE 21c Database Setup Guide by [MUHAMMAD ABDUL REHMAN KHAN](https://github.com/mabdulrehmankhan)
+# Oracle XE 21c Database Setup Guide
 
-## Steps to Download and Install Oracle XE 21c Database
+**By [MUHAMMAD ABDUL REHMAN KHAN](https://github.com/mabdulrehmankhan)**
 
-### 1. Download Oracle XE 21c
+---
+
+Welcome to the ultimate guide for setting up Oracle XE 21c Database. This comprehensive step-by-step guide will help you download, install, and configure Oracle XE 21c along with the Sample HR Database.
+
+## 🚀 Quick Steps to Get Started
+
+### 1️⃣ Download Oracle XE 21c
+
 1. Visit the [Oracle XE 21c download page](https://www.oracle.com/database/technologies/xe-downloads.html).
 2. Choose the appropriate version for your operating system (Linux or Windows).
 3. Download the installer package.
@@ -13,7 +20,8 @@
 8. Note down the password for the `sys` and `system` users.
 9. Take a screenshot of the final screen showing the connection string information.
 
-### 2. Configure Sample HR Database
+### 2️⃣ Configure the Sample HR Database
+
 1. Download `human_resources.zip` from the folder.
 2. Copy the folder containing the human_resources files to the Oracle installation folder (e.g., `OracleED21c\dbhomeXE\demo\schema`).  
    **Note:** Replace the path with your exact and accurate path to the file.
@@ -42,7 +50,8 @@
     - **Parameter 5:** `$ORACLE_HOME/demo/schema/log` (Log path)
     - **Parameter 6:** `localhost:1521/XEPDB1` (Connect string)
 
-### 3. Check the Installation
+### 3️⃣ Verify the Installation
+
 1. Run the following command:
     ```sql
     conn hr/hrpwd@//localhost:1521/XEPDB1
@@ -63,7 +72,10 @@
     ```
 4. If the query returns the schema of the `employees` table, the installation is successful.
 
-### 4. Oracle SQL Developer (Optional {This is optional, if you're running commands on sqlplus, then skip this})
+### 4️⃣ Oracle SQL Developer (Optional)
+
+**This is optional; if you're running commands on SQL*Plus, you can skip this step.**
+
 1. Visit the [SQL Developer Download page](https://www.oracle.com/database/sqldeveloper/technologies/download/).
 2. Choose the appropriate version for your operating system (Linux or Windows).
 3. Download the installer package.  
