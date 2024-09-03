@@ -1,4 +1,4 @@
-## Oracle XE 21c Database Setup Guide
+# Oracle XE 21c Database Setup Guide
 
 **By [MUHAMMAD ABDUL REHMAN KHAN](https://github.com/mabdulrehmankhan)**
 
