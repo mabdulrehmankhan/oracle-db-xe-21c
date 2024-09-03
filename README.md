@@ -73,6 +73,13 @@ Welcome to the **Oracle XE 21c Database Setup Guide**—your comprehensive resou
     - **Parameter 5:** `$ORACLE_HOME/demo/schema/log` (Log path) _This location is default, Don't change this one_
     - **Parameter 6:** `localhost:1521/XEPDB1` (Connect string)
 
+12. Tf there is listner error, go to `D:\ABDULREHMAN\SOFTWARES\ORACLE_DB\ORACLE_DB_XE_21C\SETUP\dbhomeXE\network\admin` location in File Explorer and edit `listner.ora` & `tnsnames.ora` files in Notepad, and change the IP with `localhost`.
+
+   ![SQLPLUS](liste.png)
+
+
+   ![SQLPLUS](tra.png)
+
 ### 3. Check the Installation
 1. Run the following command:
     ```sql
