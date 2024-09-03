@@ -1,4 +1,11 @@
-# Oracle XE 21c Database Setup Guide by [MUHAMMAD ABDUL REHMAN KHAN](https://github.com/mabdulrehmankhan)
+# Oracle XE 21c Database Setup Guide
+### **By [MUHAMMAD ABDUL REHMAN KHAN](https://github.com/mabdulrehmankhan)**
+
+---
+
+Welcome to the **Oracle XE 21c Database Setup Guide**—your comprehensive resource for effortlessly downloading, installing, and configuring Oracle XE 21c along with the Sample HR Database. Follow these steps to ensure a smooth installation process.
+
+---
 
 ## Steps to Download and Install Oracle XE 21c Database.
 (**NOTE:** *Ensure you replace the path with the exact locations on your system.*)
@@ -65,7 +72,7 @@
     ```
 4. If the query returns the schema of the `employees` table, the installation is successful.
 
-### 4. Oracle SQL Developer (Optional {This is optional, if you're running commands on sqlplus, then skip this})
+### 4. Oracle SQL Developer (Skip this if you’re comfortable with SQL*Plus)
 1. Visit the [SQL Developer Download page](https://www.oracle.com/database/sqldeveloper/technologies/download/).
 2. Choose the appropriate version for your operating system (Linux or Windows).
 3. Download the installer package.  
@@ -73,7 +80,7 @@
 4. Unzip the downloaded file.
 5. Run `sqldeveloper.exe`.
 6. Open `sqldeveloper.exe`.
-7. Click on the "+" icon on the top left corner.
+7. Click on the green color "+" icon on the top left corner.
 8. Enter the following details:
     - **Name:** HR_SCHEMA
     - **Username:** `hr`
@@ -81,5 +88,5 @@
     - **Hostname:** `localhost`
     - **Port:** `1521`
     - **Service name:** `xepdb1`
-9. Click on "Test."
-10. If successful, click on "Connect."
+9. Click on "Test" to verify, then "Connect" to establish the connection.
+10. Now, you have successfully installed and configured hr_schema via ORACLE SQL DEVELOPER.
