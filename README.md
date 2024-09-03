@@ -13,21 +13,39 @@ Welcome to the **Oracle XE 21c Database Setup Guide**—your comprehensive resou
 
 ### 1. Download Oracle XE 21c
 1. Visit the [Oracle XE 21c download page](https://www.oracle.com/database/technologies/xe-downloads.html).
+
+   ![INSTALLATION](install.png)
+
 2. Choose the appropriate version for your operating system (Linux or Windows).
 3. Download the installer package.
 4. Unzip the downloaded file.
+
+   ![UNZIPPING](unzip.png)
+
 5. Locate and run `setup.exe`.
+
+   ![SETUP FILE](setup.png)
+
 6. If an error occurs, locate the `ISSetupPrerequisites` folder.
 7. Run the executable again. **Do not install on the C drive.**
 8. Note down the password for the `sys` and `system` users.
 9. Take a screenshot of the final screen showing the connection string information.
 
+   ![SCREENSHOT](screenshot.png)
+
+
 ### 2. Configure Sample HR Database
 1. Download `human_resources.zip` from the folder.
 2. Unzip it and copy the `human_resources` folder to the `schema` folder in the Oracle installation folder (e.g., `ABDULREHMAN\ORACLE_DB_XE_21C\dbhomeXE\demo\schema`).  
    **Note:** Replace the path with your exact and accurate path to the file.
+
+   ![HRSCEHMA](hrschema.png)
+
 3. Now, Press the Windows button and search for `SQLPLUS`.
 4. Run SQLPLUS as an administrator.
+
+   ![SQLPLUS](sqlplus.png)
+
 5. In the SQL prompt, type:
     ```sql
     connect sys as sysdba
