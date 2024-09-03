@@ -26,24 +26,19 @@ Welcome to the **Oracle XE 21c Database Setup Guide**—your comprehensive resou
 1. Download `human_resources.zip` from the folder.
 2. Copy the folder containing the human_resources files to the Oracle installation folder (e.g., `ABDULREHMAN\ORACLE_DB_XE_21C\dbhomeXE\demo\schema`).  
    **Note:** Replace the path with your exact and accurate path to the file.
-3. Open the `hr-schema` folder.
-4. Open the `hr_main.sql` file with a text editor.
-5. Delete the `hr_main.sql` file.
-6. Download the new `hr_main.sql` file from the folder.
-7. Place it in the `hr-schema` folder.
-8. Press the Windows button and search for `SQLPLUS`.
-9. Run SQLPLUS as an administrator.
-10. In the SQL prompt, type:
+3. Now, Press the Windows button and search for `SQLPLUS`.
+4. Run SQLPLUS as an administrator.
+5. In the SQL prompt, type:
     ```sql
     connect sys as sysdba
     ```
-11. Enter the password you set up during installation.
-12. Provide the path to `hr_main.sql`:
+6. Enter the password you set up during installation.
+7. Provide the path to `hr_main.sql`:
     ```sql
     @D:\ABDULREHMAN\ORACLE_DB_XE_21C\dbhomeXE\demo\schema\human_resources\hr_main.sql
     ```
-13. Press Enter.
-14. Provide the following values:
+8. Press Enter.
+9. Provide the following values:
     - **Parameter 1:** `hrpwd` (Password for HR)
     - **Parameter 2:** `users` (Default tablespace for HR)
     - **Parameter 3:** `temp` (Temporary tablespace for HR)
