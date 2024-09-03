@@ -5,6 +5,7 @@
 ---
 
 Welcome to the **Oracle XE 21c Database Setup Guide**—your comprehensive resource for effortlessly downloading, installing, and configuring Oracle XE 21c along with the Sample HR Database. Follow these steps to ensure a smooth installation process.
+**NOTE:** *Ensure you replace the path with the exact locations on your system.*
 
 ---
 
