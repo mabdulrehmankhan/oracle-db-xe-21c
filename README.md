@@ -24,7 +24,7 @@ Welcome to the **Oracle XE 21c Database Setup Guide**—your comprehensive resou
 
 ### 2. Configure Sample HR Database
 1. Download `human_resources.zip` from the folder.
-2. Copy the folder containing the human_resources files to the Oracle installation folder (e.g., `ABDULREHMAN\ORACLE_DB_XE_21C\dbhomeXE\demo\schema`).  
+2. Unzip it and copy the `human_resources` folder to the `schema` folder in the Oracle installation folder (e.g., `ABDULREHMAN\ORACLE_DB_XE_21C\dbhomeXE\demo\schema`).  
    **Note:** Replace the path with your exact and accurate path to the file.
 3. Now, Press the Windows button and search for `SQLPLUS`.
 4. Run SQLPLUS as an administrator.
