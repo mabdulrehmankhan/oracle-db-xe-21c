@@ -66,6 +66,9 @@ Welcome to the **Oracle XE 21c Database Setup Guide**—your comprehensive resou
     DESC employees;
     ```
 4. If the query returns the schema of the `employees` table, the installation is successful.
+5. The result should be like this:
+
+   ![FINAL RESULT](final_result.jpg)
 
 ### 4. Oracle SQL Developer (Skip this if you’re comfortable with SQL*Plus)
 1. Visit the [SQL Developer Download page](https://www.oracle.com/database/sqldeveloper/technologies/download/).
