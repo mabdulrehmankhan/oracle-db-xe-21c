@@ -8,7 +8,7 @@ Welcome to the **Oracle XE 21c Database Setup Guide**—your comprehensive resou
 ---
 
 ## Steps to Download and Install Oracle XE 21c Database.
-(**NOTE:** *Ensure you replace the path with the exact locations on your system.*)
+(**NOTE:** *❗❗Ensure you replace the paths with the exact locations on your system in all places.❗❗*)
 
 
 ### 1. Download Oracle XE 21c
