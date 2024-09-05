@@ -74,7 +74,7 @@ Welcome to the **Oracle XE 21c Database Setup Guide**—your comprehensive resou
     - **Parameter 6:** `localhost:1521/XEPDB1` (Connect string)
 
 12. Tf there is listner error, go to `D:\ABDULREHMAN\SOFTWARES\ORACLE_DB\ORACLE_DB_XE_21C\SETUP\dbhomeXE\network\admin` location in File Explorer and edit `listner.ora` & `tnsnames.ora` files in Notepad, and change the IP with `localhost`. 
-***(If you are having trouble, don't worry! just download these files from repo and replace there)***
+***(If you are having trouble, don't worry! just download these files from repo, replace the paths according to your paths and paste there)***
 
    ![SQLPLUS](/images/liste.png)
 
@@ -87,7 +87,7 @@ Welcome to the **Oracle XE 21c Database Setup Guide**—your comprehensive resou
     conn hr/hrpwd@//localhost:1521/XEPDB1
     ```
 2. Execute the following scripts one by one:  
-   **Note:** Replace the path with your exact and accurate path to the file.
+   **❗❗** **(NOTE: ENSURE YOU REPLACE THE PATHS WITH THE EXACT LOCATIONS ON YOUR SYSTEM IN ALL PLACES.)** **❗❗**
     ```sql
     @D:\ABDULREHMAN\ORACLE_DB_XE_21C\dbhomeXE\demo\schema\human_resources\hr_cre.sql
     @D:\ABDULREHMAN\ORACLE_DB_XE_21C\dbhomeXE\demo\schema\human_resources\hr_popul.sql
